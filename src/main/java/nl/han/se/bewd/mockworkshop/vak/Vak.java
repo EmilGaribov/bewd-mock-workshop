@@ -22,13 +22,13 @@ public class Vak {
     }
 
     public void verwijderStudentUitAlleToetsen(Student stud) {
-        summatieveToetsen.forEach(toets -> {
-            try {
-                toets.verwijderStudentResultaten(stud);
-            } catch (FoutiefStudentException fse) {
-                System.out.println("Er ging iets mis bij het verwijderen van studentresultaten.");
-                throw new RuntimeException("Er ging iets mis bij het verwijderen van studentresultaten.");
-            }
-        });
+//        summatieveToetsen.forEach(toets -> {
+//            try {
+//                toets.verwijderStudentResultaten(stud);
+//            } catch (FoutiefStudentException fse) {
+//                System.out.println("Er ging iets mis bij het verwijderen van studentresultaten.");
+//                throw new RuntimeException("Er ging iets mis bij het verwijderen van studentresultaten.");
+//            }
+//        });
     }
 }

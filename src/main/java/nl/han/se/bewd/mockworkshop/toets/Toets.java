@@ -7,6 +7,14 @@ public class Toets implements Summatief {
 
     ToetsResultaatRegistratieDB db;
 
+    public ToetsResultaatRegistratieDB getDb() {
+        return db;
+    }
+
+    public void setDb(ToetsResultaatRegistratieDB db) {
+        this.db = db;
+    }
+
     public Toets() {
         db = new ToetsResultaatRegistratieDB();
     }
