@@ -5,6 +5,8 @@ import nl.han.se.bewd.mockworkshop.student.Student;
 
 public class Toets implements Summatief {
 
+
+
     ToetsResultaatRegistratieDB db;
 
     public ToetsResultaatRegistratieDB getDb() {
@@ -34,7 +36,14 @@ public class Toets implements Summatief {
 
     @Override
     public void verwijderStudentResultaten(Student s) {
-
         db.verwijderResultaatVanStudent(s);
+    }
+
+    public ToetsResultaatRegistratieDB getDb() {
+        return db;
+    }
+
+    public void setDb(ToetsResultaatRegistratieDB db) {
+        this.db = db;
     }
 }
